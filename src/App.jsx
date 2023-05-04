@@ -1,5 +1,6 @@
 import './App.css';
 import Cards from './components/cards/Cards';
+import Contato from './components/Contato';
 import Footer from './components/Footer';
 import InfoCard from './components/InfoCard';
 import Projetos from './components/Projetos';
@@ -19,6 +20,10 @@ function App() {
 
       <section className="w-section mt-8 mx-auto max-2xl:w-10/12">
         <Projetos />
+      </section>
+
+      <section className="w-section mt-8 mx-auto max-2xl:w-10/12">
+        <Contato />
       </section>
 
       <section className='pt-44'>

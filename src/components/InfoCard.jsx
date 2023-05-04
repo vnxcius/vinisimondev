@@ -21,12 +21,12 @@ export default function InfoCard() {
       <hr className="h-[1px] bg-neutral-800 border-none" />
 
       <p className="font-sourcesanspro text-center">
-        Olá, me chamo Vinícius Simon, apaixonado criar soluções inovadoras e funcionais.
+        Olá, me chamo Vinícius Simon, apaixonado em criar soluções inovadoras e funcionais.
         Estou constantemente aprendendo e aprimorando minhas habilidades para oferecer o
         melhor resultado aos meus clientes.
       </p>
 
-      <a href="mailto:vinisghilton@gmail.com" className="w-10/12 mx-auto flex gap-2 justify-center items-center bg-secondary rounded-full font-oswald font-semibold text-neutral-800 uppercase p-2 hover:bg-tertiary max-sm:">
+      <a href="#contato" className="w-10/12 mx-auto flex gap-2 justify-center items-center bg-secondary rounded-full font-oswald font-semibold text-neutral-800 uppercase p-2 hover:bg-tertiary max-sm:">
         <ion-icon name="mail-outline" class="text-2xl"></ion-icon>
         <p>Entre em Contato</p>
       </a>
