@@ -22,6 +22,7 @@ export const theme = {
       'neutral-850': '#202020',
       'react': '#61DBFB',
       'php': '#777BB3',
+      'laravel': '#FF291A',
     },
     keyframes: {
       showCard: {

@@ -4,14 +4,14 @@ export default function CardBackend() {
 
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-2 text-xl">
-          <ion-icon name="logo-laravel" class="text-[#FF291A]"></ion-icon>
+          <ion-icon name="logo-laravel" class="text-laravel"></ion-icon>
           <p className="font-poppins">
             Laravel 10
           </p>
         </div>
 
         <div className="bg-neutral-700 w-[90px] h-1 m-1 rounded-full">
-          <div className="bg-[#FF291A] animate-reactBar h-1 rounded-full"></div>
+          <div className="bg-laravel animate-reactBar h-1 rounded-full"></div>
         </div>
 
       </div>

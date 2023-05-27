@@ -64,7 +64,7 @@ export default function Projetos() {
         </li>
 
         <li className="w-96 bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
-          <a href="http://triphorce.42web.io/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             <div className="relative">
               <img src="./img/triphorce.png" alt="" className="object-cover h-52 rounded" />
             </div>
@@ -81,8 +81,8 @@ export default function Projetos() {
 
               </div>
 
-              <a href="#react" className="py-1 px-4 rounded bg-neutral-800 text-php font-semibold hover:bg-php hover:text-neutral-800">
-                PHP
+              <a href="#react" className="py-1 px-4 rounded bg-neutral-800 text-laravel font-semibold hover:bg-laravel hover:text-neutral-800">
+                Laravel
               </a>
 
             </div>
