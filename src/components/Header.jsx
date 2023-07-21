@@ -26,8 +26,7 @@ export default function Header() {
       <div className="max-w-5xl mx-auto">
         <nav className="flex justify-between items-center p-3">
           <a href="#index">
-            <img src={` ${isScrolled ? './img/logo.png' : './img/logo.png'} `} alt="Logo Header"
-              className={` ${isScrolled ? 'p-2 w-[30px]' : 'p-2 w-[30px]'} `} />
+            <img src="./img/logo.png"alt="Logo Header" className="p-2 w-[30px]"/>
           </a>
 
           <ul className="flex gap-10 font-oswald font-bold uppercase text-lg text-white">
