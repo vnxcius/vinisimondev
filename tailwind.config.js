@@ -23,6 +23,7 @@ export const theme = {
       'react': '#61DBFB',
       'php': '#777BB3',
       'laravel': '#FF291A',
+      'go': '#00AED8',
     },
     keyframes: {
       showCard: {
