@@ -49,6 +49,11 @@ export const theme = {
         '32%': {width: '0%'},
         '100%': {width: '92%'},
       },
+      goBar: {
+        '0%': {width: '0%'},
+        '32%': {width: '0%'},
+        '100%': {width: '84%'},
+      },
     },
     animation: {
       showCard: 'showCard .6s ease forwards',
@@ -56,6 +61,7 @@ export const theme = {
       jsBar: 'jsBar 1s ease forwards',
       tailwindBar: 'tailwindBar 1.2s ease forwards',
       cssBar: 'cssBar 1.2s ease forwards',
+      goBar: 'goBar 1.2s ease forwards',
     }
   },
 };

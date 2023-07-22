@@ -44,6 +44,20 @@ export default function CardBackend() {
 
       </div>
 
+      <div className="flex flex-col items-center">
+        <div className="flex items-center gap-2 text-xl">
+          <ion-icon src="./img/logo-go.svg"></ion-icon>
+          <p className="font-poppins">
+            Go
+          </p>
+        </div>
+
+        <div className="bg-neutral-700 w-[90px] h-1 m-1 rounded-full">
+          <div className="bg-go animate-goBar h-1 rounded-full"></div>
+        </div>
+
+      </div>
+
     </div>
   )
 }
