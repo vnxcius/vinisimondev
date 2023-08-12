@@ -9,7 +9,7 @@ export default function Projetos() {
         </p>
       </div>
 
-      <ul className="font-sourcesanspro pt-7 flex flex-wrap gap-10">
+      <ul className="font-sourcesanspro pt-7 grid grid-cols-3">
 
         <li className="w-96 bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
           <a href="https://vinisimon.dev/" target="_blank" rel="noreferrer">
@@ -64,15 +64,15 @@ export default function Projetos() {
         </li>
 
         <li className="w-96 bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://triph-front.vercel.app" target="_blank" rel="noreferrer">
             <div className="relative">
-              <img src="./img/triphorce.png" alt="" className="object-cover h-52 rounded" />
+              <img src="./img/triph.png" alt="" className="object-cover h-52 rounded" />
             </div>
 
-            <div className="flex flex-wrap justify-between py-6 px-4">
+            <div className="flex flex-wrap items-center justify-between py-6 px-4">
               <div className="flex items-center gap-2">
                 <p className="text-xl font-semibold text-secondary">
-                  Triphorce
+                  triph.
                 </p>
 
                 <p className=" text-cyan-400">
@@ -80,10 +80,14 @@ export default function Projetos() {
                 </p>
 
               </div>
-
-              <a href="#react" className="py-1 px-4 rounded bg-neutral-800 text-laravel font-semibold hover:bg-laravel hover:text-neutral-800">
-                Laravel
-              </a>
+              <div className="space-x-2">
+                <a href="#react" className="py-1 px-4 rounded bg-neutral-800 text-react font-semibold hover:bg-react hover:text-neutral-800">
+                  React
+                </a>
+                <a href="#go" className="py-1 px-4 rounded bg-neutral-800 text-go font-semibold hover:bg-go hover:text-neutral-800">
+                  Go
+                </a>
+              </div>
 
             </div>
 
