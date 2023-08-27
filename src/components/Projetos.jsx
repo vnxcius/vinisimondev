@@ -9,9 +9,9 @@ export default function Projetos() {
         </p>
       </div>
 
-      <ul className="font-sourcesanspro pt-7 grid grid-cols-3">
+      <ul className="font-sourcesanspro pt-7 grid grid-cols-3 gap-4">
 
-        <li className="w-96 bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
+        <li className="bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
           <a href="https://vinisimon.dev/" target="_blank" rel="noreferrer">
             <div className="relative">
               <img src="./img/vinisimondev.png" alt="" className="object-cover h-52 rounded" />
@@ -38,7 +38,7 @@ export default function Projetos() {
           </a>
         </li>
 
-        <li className="w-96 bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
+        <li className="bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
           <a href="https://olieart.com.br/" target="_blank" rel="noreferrer">
             <div className="relative">
               <img src="./img/olieart.png" alt="" className="object-cover h-52 rounded" />
@@ -63,7 +63,7 @@ export default function Projetos() {
           </a>
         </li>
 
-        <li className="w-96 bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
+        <li className="bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
           <a href="https://triph-front.vercel.app" target="_blank" rel="noreferrer">
             <div className="relative">
               <img src="./img/triph.png" alt="" className="object-cover h-52 rounded" />
@@ -87,6 +87,29 @@ export default function Projetos() {
                 <a href="#go" className="py-1 px-4 rounded bg-neutral-800 text-go font-semibold hover:bg-go hover:text-neutral-800">
                   Go
                 </a>
+              </div>
+
+            </div>
+
+          </a>
+        </li>
+
+        <li className="bg-neutral-850 rounded shadow border border-neutral-800 hover:scale-105 transition-all max-2xl:w-80">
+          <a href="https://vnxcius.github.io/antigo-portfolio/" target="_blank" rel="noreferrer">
+            <div className="relative">
+              <img src="./img/vinisimondev_old.png" alt="" className="object-cover h-52 rounded" />
+            </div>
+
+            <div className="flex flex-wrap items-center justify-between py-6 px-4">
+              <div className="flex items-center gap-2">
+                <p className="text-md font-semibold text-secondary">
+                  vinisimon.dev - antigo
+                </p>
+
+                <p className=" text-cyan-400">
+                  Finalizado
+                </p>
+
               </div>
 
             </div>
