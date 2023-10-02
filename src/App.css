@@ -1,8 +1,0 @@
-ion-icon[name="chevron-down"].active{
-  transform: rotateX(-180deg);
-  transition: all .6s ease;
-}
-ion-icon[name="chevron-down"]{
-  transition: all .6s ease;
-  
-}
