@@ -1,19 +1,18 @@
 import './App.css'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <div className='flex flex-col pt-52 items-center mx-auto h-screen'>
-        <div className='bg-primary px-12 py-10 rounded-lg shadow-lg'>
-          <h1 className='text-accent font-archivoblack uppercase text-5xl'>
-            Em manutenção
-          </h1>
-          <p className='text-secondary font-semibold'>
-            Em breve estarei de volta!
-          </p>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path='/404' element={<h1>Not Found</h1>} />
+        <Route path='*' element={<Navigate to='/404' />} />
+         
+      </Routes>
     </>
   )
 }
