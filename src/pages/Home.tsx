@@ -1,15 +1,22 @@
-
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Project from '../components/Project';
+import { motion } from 'framer-motion';
+
 import handsome from '/img/handsome.jpg';
 import logo from '/img/logo-white.png';
 import redirecticon from '/icons/arrow-right-1.svg';
 import HomeGridLink from '../components/HomeGridLink';
 import HomeGridItem from '../components/HomeGridItem';
+import HomeGridButton from '../components/HomeGridButton';
 
 const Home = () => {
   const github = 'https://github.com/vnxcius';
   const linkedin = 'https://www.linkedin.com/in/vinicius-simon-gouveia-hilton/';
   const instagram = 'https://www.instagram.com/vini_html/';
+
+  const [showProject, setShowProject] = useState<boolean>(false);
+  const [project, setProject] = useState<string>('');
 
   return (
     <div className='flex w-full h-screen font-sourcesans text-gray-200 bg-dark'>
@@ -55,32 +62,47 @@ const Home = () => {
         </div>
 
         <div className='grid grid-cols-4 place-items-start mt-72'>
-          <div className='space-y-1'>
-            <h4>
-              <span>Projetos</span> <br />
-            </h4>
-            <HomeGridLink link={github + '/vinisimondev'} text={'Este portfólio'} date='11/2023' redirect />
-            <HomeGridLink link={github + '/rest-api-gin'} text={'REST API Gin'} date='07/2023' redirect />
-            <HomeGridLink link={'/projetos/medellin'} text={'Medellin'} />
-            <HomeGridLink link={'/projetos/triph'} text={'triph.'} />
-          </div>
+          {showProject ? (
+            <>
+              {project === 'medellin' && (
+                <Project title='Medellin' func={() => { setShowProject(false); setProject('') }} />
+              )}
+              {project === 'triph' && (
+                <Project title='triph.' func={() => { setShowProject(false); setProject('') }} />
+              )}
+            </>
+          ) : (
+            <motion.div className='space-y-1'
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, type: 'spring', bounce: 0.4 }}
+            >
+              <h4>
+                <span>Projetos</span> <br />
+              </h4>
+              <HomeGridLink link={github + '/vinisimondev'} text={'Este portfólio'} date='11/2023' redirect />
+              <HomeGridLink link={github + '/rest-api-gin'} text={'REST API Gin'} date='07/2023' redirect />
+              <HomeGridButton text={'Medellin'} func={() => { setShowProject(true); setProject('medellin') }} />
+              <HomeGridButton text={'triph.'} func={() => { setShowProject(true); setProject('triph') }} />
+            </motion.div>
+          )}
           <div className='space-y-1'>
             <h4>
               Stack
             </h4>
-            <HomeGridItem text={'JavaScript'} type='Front-end'/>
-            <HomeGridItem text={'Golang'} type='Back-end'/>
-            <HomeGridItem text={'PHP'} type='Back-end'/>
-            <HomeGridItem text={'TailwindCSS'} type='Framework'/>
-            <HomeGridItem text={'ReactJS/TS'} type='Framework'/>
-            <HomeGridItem text={'Laravel'} type='Framework'/>
-            <HomeGridItem text={'Gin'} type='Framework'/>
-            <HomeGridItem text={'Git'} type='Ferramentas'/>
-            <HomeGridItem text={'Docker'} type='Ferramentas'/>
-            <HomeGridItem text={'PostgreSQL'} type='SGBD'/>
-            <HomeGridItem text={'MySQL'} type='SGBD'/>
-            <HomeGridItem text={'Figma'} type='Design'/>
-            <HomeGridItem text={'Adobe Photoshop 2023'} type='Design'/>
+            <HomeGridItem text={'JavaScript'} type='Front-end' />
+            <HomeGridItem text={'Golang'} type='Back-end' />
+            <HomeGridItem text={'PHP'} type='Back-end' />
+            <HomeGridItem text={'TailwindCSS'} type='Framework' />
+            <HomeGridItem text={'React'} type='Framework' />
+            <HomeGridItem text={'Laravel'} type='Framework' />
+            <HomeGridItem text={'Gin'} type='Framework' />
+            <HomeGridItem text={'Git'} type='Ferramentas' />
+            <HomeGridItem text={'Docker'} type='Ferramentas' />
+            <HomeGridItem text={'PostgreSQL'} type='SGBD' />
+            <HomeGridItem text={'MySQL'} type='SGBD' />
+            <HomeGridItem text={'Figma'} type='Design' />
+            <HomeGridItem text={'Adobe Photoshop 2023'} type='Design' />
           </div>
           <div className='space-y-1'>
             <h4>
