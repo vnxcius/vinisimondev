@@ -6,15 +6,20 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        accent: "#15aaff", // Azul
-        primary: "#373636", // Cinza
-        secondary: "#f8f7f3", // Branco
-      },
       fontFamily: {
-        opensans: "'Open Sans', sans-serif",
-        archivoblack: "'Archivo Black', sans-serif",
-        sourcesans: "'Source Sans 3', sans-serif",
+        'source-sans': ["'Source Sans 3', 'sans-serif'"],
+      },
+      colors: {
+        'neutral-925': '#101010',
+        'accent': '#985eff'
+      },
+      animation: {
+        'loop-scroll': 'loop-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll': {
+          to: { transform: 'translate(-101.4%)' },
+        }
       },
     },
   },
