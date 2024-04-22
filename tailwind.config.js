@@ -6,11 +6,20 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        dark: "#101010", // Preto
-      },
       fontFamily: {
-        sourcesans: "'Source Sans 3', sans-serif",
+        'source-sans': ["'Source Sans 3', 'sans-serif'"],
+      },
+      colors: {
+        'neutral-925': '#101010',
+        'accent': '#985eff'
+      },
+      animation: {
+        'loop-scroll': 'loop-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll': {
+          to: { transform: 'translate(-101.4%)' },
+        }
       },
     },
   },
