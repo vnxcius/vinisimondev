@@ -105,7 +105,7 @@ function App() {
         </div>
 
         <div>
-          <img src="/img/handsome.png" alt="" className="rounded-md md:min-w-96 md:w-96 md:min-h-96 md:h-96" />
+          <img src="/img/handsome.webp" alt="" className="rounded-md md:min-w-96 md:w-96 md:min-h-96 md:h-96" />
         </div>
       </section>
 
