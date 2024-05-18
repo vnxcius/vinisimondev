@@ -13,19 +13,19 @@ body {
   mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
 }
 
-.bg-\[url\(\'\/img\/olieart\.png\'\)\] {
-  background-image: url('/img/olieart.png');
+.bg-\[url\(\'\/img\/olieart\.webp\'\)\] {
+  background-image: url('/img/olieart.webp');
 }
 
-.bg-\[url\(\'\/img\/medellin\.png\'\)\] {
-  background-image: url('/img/medellin.png');
+.bg-\[url\(\'\/img\/medellin\.webp\'\)\] {
+  background-image: url('/img/medellin.webp');
+}
+
+.bg-\[url\(\'\/img\/api-gin\.webp\'\)\] {
+  background-image: url('/img/api-gin.webp');
+  background-position: left;
 }
 
 .bg-\[url\(\'\/img\/skeleton_placeholder\.png\'\)\] {
   background-image: url('/img/skeleton_placeholder.png');
-}
-
-.bg-\[url\(\'\/img\/api-gin\.png\'\)\] {
-  background-image: url('/img/api-gin.png');
-  background-position: left;
 }
