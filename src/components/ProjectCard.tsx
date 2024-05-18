@@ -8,7 +8,7 @@ type Props = {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className={`group border relative border-neutral-800 shadow py-3 px-10 h-64 rounded-lg bg-no-repeat bg-cover bg-top bg-[url('/img/olieart.png')] bg-[url('${props.img}')] transition-all duration-700`}>
+    <div className={`group border relative border-neutral-800 shadow py-3 px-10 h-64 rounded-lg bg-no-repeat bg-cover bg-top bg-[url('/img/olieart.webp')] bg-[url('${props.img}')] transition-all duration-700`}>
       <div className="absolute left-0 bottom-0 pb-5 pt-10 px-5 md:px-10 w-full bg-gradient-to-b from-transparent via-black/50 to-black/80 rounded-b-md">
         <a href={props.link} target="_blank" className="flex items-center gap-2 text-neutral-50 text-lg md:text-xl font-extrabold hover:underline">
           {props.name}
