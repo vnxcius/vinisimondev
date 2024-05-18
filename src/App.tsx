@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
+import { lazy, useEffect, useState } from "react"
 import CertCard from "./components/CertCard"
-import SkillCard from "./components/SkillCard"
 import ProjectCard from "./components/ProjectCard"
+const SkillCard = lazy(() => import("./components/SkillCard"));
 
 function App() {
   const [show, setShow] = useState(false)
