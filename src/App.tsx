@@ -138,6 +138,16 @@ function App() {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <ProjectCard
+              link="https://jvlf.site"
+              name="jvlf.site"
+              img="/img/skeleton_placeholder.png"
+              description="Site para mostrar o PDTI/PSI 2025-26 fictício do Banco do Brasil."
+              stack={[
+                "react",
+                "tailwind",
+              ]}
+            />
+            <ProjectCard
               link="https://medellincompany.com.br"
               name="Medellin Original Company"
               img="/img/medellin.webp"
