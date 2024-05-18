@@ -63,7 +63,7 @@ function App() {
         className="mx-auto flex gap-20 justify-between items-end text-neutral-300 my-10 bg-transparent z-20
         max-w-xs md:max-w-3xl lg:max-w-5xl
         flex-col-reverse md:flex-row">
-        <div className="max-w-2xl">
+        <div className="max-w-lg">
           <h1 className="text-lg text-neutral-300 mb-8 font-mono">
             <span className="text-accent">#</span> Sobre
           </h1>
@@ -85,19 +85,19 @@ function App() {
             <a href="mailto:vinisghilton@gmail.com" target="_blank"
               className="flex items-center gap-2 w-fit px-6 py-1.5 bg-accent text-neutral-925 font-medium rounded hover:brightness-75
               focus:outline-none focus:ring-2 ring-purple-300">
-              <img src="/icons/gmail.svg" alt="" className="w-5" />
+              <img src="/icons/gmail.svg" alt="" className="size-5" />
               <span className="font-medium">Contato</span>
             </a>
             <span className="text-neutral-600">ou</span>
             <ul className="flex gap-4">
               <li>
                 <a href="https://github.com/vnxcius" target="_blank">
-                  <img src="/icons/github.svg" alt="Github" className="w-5 invert" />
+                  <img src="/icons/github.svg" alt="Github" className="size-5 invert" />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/vinicius-simon-gouveia-hilton" target="_blank">
-                  <img src="/icons/linkedin.svg" alt="Linkedin" className="w-5 invert" />
+                  <img src="/icons/linkedin.svg" alt="Linkedin" className="size-5 invert" />
                 </a>
               </li>
             </ul>
@@ -138,9 +138,19 @@ function App() {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <ProjectCard
+              link="https://jvlf.site"
+              name="jvlf.site"
+              img="/img/skeleton_placeholder.png"
+              description="Site para mostrar o PDTI/PSI 2025-26 fictício do Banco do Brasil."
+              stack={[
+                "react",
+                "tailwind",
+              ]}
+            />
+            <ProjectCard
               link="https://medellincompany.com.br"
               name="Medellin Original Company"
-              img="/img/medellin.png"
+              img="/img/medellin.webp"
               description="E-commerce de roupas e acessórios. Participei de todo desenvolvimento, do zero a produção."
               stack={[
                 "go",
@@ -153,7 +163,7 @@ function App() {
             <ProjectCard
               link="https://olieart.com.br"
               name="Olie Art - Portfólio"
-              img="/img/olieart.png"
+              img="/img/olieart.webp"
               description="Site portfólio simples para uma designer."
               stack={[
                 "firebase",
@@ -165,7 +175,7 @@ function App() {
             <ProjectCard
               link="https://github.com/vnxcius/rest-api-gin"
               name="RESTful API com Gin"
-              img="/img/api-gin.png"
+              img="/img/api-gin.webp"
               description="RESTful API que registra, busca e atualiza Alunos. Orientada a testes."
               stack={[
                 "go",
@@ -185,12 +195,12 @@ function App() {
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 place-items-center">
             <CertCard
               link="https://www.credly.com/badges/bbfbb6ac-ed1e-446e-a3ff-fff3b48ae80c/public_url"
-              img="/img/zxplore.png"
+              img="/img/zxplore.webp"
               name="IBM Z Xplore - Concepts"
             />
             <CertCard
               link="https://www.credly.com/badges/670aeee4-679c-4ebb-adb8-0790eefc15fb/public_url"
-              img="/img/scrum.png"
+              img="/img/scrum.webp"
               name="Scrum Foundation - SFPC™"
             />
           </div>
