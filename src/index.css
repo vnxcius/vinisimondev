@@ -26,6 +26,10 @@ body {
   background-position: left;
 }
 
+.bg-\[url\(\'\/img\/jvlf_site\.webp\'\)\] {
+  background-image: url('/img/jvlf_site.webp');
+}
+
 .bg-\[url\(\'\/img\/skeleton_placeholder\.png\'\)\] {
   background-image: url('/img/skeleton_placeholder.png');
 }
