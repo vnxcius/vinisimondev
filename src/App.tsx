@@ -15,19 +15,6 @@ function App() {
     }
     setLastScroll(100)
   }
-  useEffect(() => {
-    function scroller() {
-      const scroller = document.getElementById("scroller")
-      const scrollerContent = Array.from(scroller!.children)
-
-      scrollerContent.forEach((item) => {
-        const dup = item.cloneNode(true) as HTMLElement;
-        dup.setAttribute("aria-hidden", "true");
-        scroller!.appendChild(dup);
-      })
-    }
-    scroller();
-  })
 
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar)
@@ -60,7 +47,7 @@ function App() {
       <div className="bg-accent rounded-full absolute -z-10 brightness-50 w-52 h-52 md:w-[500px] md:h-[500px] top-0 right-0 md:-right-52 md:-top-36 blur-[100px]"></div>
 
       <section id="sobre"
-        className="mx-auto flex gap-20 justify-between items-end text-neutral-300 my-10 bg-transparent z-20
+        className="mx-auto flex gap-20 justify-between items-end text-neutral-300 mt-20 mb-44 bg-transparent z-20
         max-w-xs md:max-w-3xl lg:max-w-5xl
         flex-col-reverse md:flex-row">
         <div className="max-w-lg">
@@ -105,7 +92,7 @@ function App() {
         </div>
 
         <div>
-          <img src="/img/handsome.webp" alt="" className="rounded-md md:min-w-96 md:w-96 md:min-h-96 md:h-96" />
+          <img src="/img/handsome.webp" alt="" className="rounded-xl md:min-w-96 md:w-96 md:min-h-96 md:h-96" />
         </div>
       </section>
 
@@ -113,19 +100,19 @@ function App() {
         <h1 className="text-lg text-neutral-300 mb-8 font-mono mx-auto max-w-xs md:max-w-3xl lg:max-w-5xl">
           <span className="text-accent">#</span> Habilidades e Interesses
         </h1>
-        <div id="scroller" className="max-w-full flex gap-7 mx-auto overflow-hidden">
-          <div className="flex flex-nowrap w-max gap-7 animate-loop-scroll">
+        <div className="max-w-sm md:max-w-3xl lg:max-w-5xl mx-auto w-fit flex gap-7 overflow-hidden">
+          <div className="grid gap-3 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
             <SkillCard icon="/icons/react.svg" name="React" />
             <SkillCard icon="/icons/go.svg" name="Golang" />
             <SkillCard icon="/icons/docker.svg" name="Docker" />
-            <SkillCard icon="/icons/postgres.svg" name="PostgreSQL" />
-            <SkillCard icon="/icons/php.svg" name="PHP" />
+            <SkillCard icon="/icons/postgresql.svg" name="PostgreSQL" />
+            <SkillCard icon="/icons/php_dark.svg" name="PHP" />
             <SkillCard icon="/icons/tailwind.svg" name="TailwindCSS" />
-            <SkillCard icon="/icons/java.png" name="Java" />
+            <SkillCard icon="/icons/java.svg" name="Java" />
             <SkillCard icon="/icons/figma.svg" name="Figma" />
             <SkillCard icon="/icons/cobol.svg" name="Cobol" />
-            <SkillCard icon="/icons/zos.png" name="z/OS" />
-            <SkillCard icon="/icons/laravel.png" name="Laravel" />
+            <SkillCard icon="/icons/ibm.svg" name="z/OS" />
+            <SkillCard icon="/icons/laravel.svg" name="Laravel" />
             <SkillCard icon="/icons/gin.svg" name="Gin" />
           </div>
         </div>
@@ -140,7 +127,7 @@ function App() {
             <ProjectCard
               link="https://jvlf.site"
               name="jvlf.site"
-              img="/img/skeleton_placeholder.png"
+              img="/img/jvlf_site.webp"
               description="Site para mostrar o PDTI/PSI 2025-26 fictício do Banco do Brasil."
               stack={[
                 "react",
@@ -156,7 +143,7 @@ function App() {
                 "go",
                 "tailwind",
                 "docker",
-                "postgres",
+                "postgresql",
               ]}
             />
 
@@ -207,8 +194,8 @@ function App() {
         </div>
       </section>
 
-      <footer className="w-full bg-neutral-900 py-5 flex justify-center">
-        <a href="https://github.com/vnxcius/vinisimondev" target="_blank" className="flex items-center gap-5 text-neutral-600 font-mono italic text-center px-5 hover:underline hover:text-accent">
+      <footer className="w-full my-10 mt-20 flex justify-center">
+        <a href="https://github.com/vnxcius/vinisimondev" target="_blank" className="flex items-center gap-5 text-neutral-600 text-center px-5 hover:underline hover:text-accent">
           <span>&copy; 2024 Developed with ❤ by Vinícius S. G. Hilton</span>
           <img src="/icons/github.svg" alt="" className="size-4 invert"/>
         </a>
