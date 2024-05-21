@@ -69,12 +69,14 @@ function App() {
             que um verdadeiro dev fullstack pode oferecer.
           </p>
           <div className="flex items-center gap-5">
-            <a href="mailto:vinisghilton@gmail.com" target="_blank"
-              className="flex items-center gap-2 w-fit px-6 py-1.5 bg-accent text-neutral-925 font-medium rounded hover:brightness-75
-              focus:outline-none focus:ring-2 ring-purple-300">
-              <img src="/icons/gmail.svg" alt="" className="size-5" />
-              <span className="font-medium">Contato</span>
-            </a>
+            <div>
+              <a href="mailto:contato@vncius.dev" target="_blank" title="contato@vncius.dev"
+                className="flex items-center gap-2 w-fit px-6 py-1.5 bg-accent text-neutral-925 font-medium rounded hover:brightness-75
+                focus:outline-none focus:ring-2 ring-purple-300">
+                <img src="/icons/gmail.svg" alt="" className="size-5" />
+                <span className="font-medium">Contato</span>
+              </a>
+            </div>
             <span className="text-neutral-600">ou</span>
             <ul className="flex gap-4">
               <li>
@@ -89,6 +91,7 @@ function App() {
               </li>
             </ul>
           </div>
+          <p className="text-neutral-500 text-sm m-1">contato@vncius.dev</p>
         </div>
 
         <div>
@@ -197,7 +200,7 @@ function App() {
       <footer className="w-full my-10 mt-20 flex justify-center">
         <a href="https://github.com/vnxcius/vinisimondev" target="_blank" className="flex items-center gap-5 text-neutral-600 text-center px-5 hover:underline hover:text-accent">
           <span>&copy; 2024 Developed with ❤ by Vinícius S. G. Hilton</span>
-          <img src="/icons/github.svg" alt="" className="size-4 invert"/>
+          <img src="/icons/github.svg" alt="" className="size-4 invert" />
         </a>
       </footer>
     </>
