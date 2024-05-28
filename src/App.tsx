@@ -1,6 +1,8 @@
 import { lazy, useEffect, useState } from "react"
 import CertCard from "./components/CertCard"
 import ProjectCard from "./components/ProjectCard"
+import Github from "./assets/icons/github";
+import LinkedIn from "./assets/icons/linkedin";
 const SkillCard = lazy(() => import("./components/SkillCard"));
 
 function App() {
@@ -39,6 +41,16 @@ function App() {
           <li>
             <a href="#certificacoes" className="hover:underline underline-offset-2">
               <span className="text-accent">#</span> Certificações
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/vnxcius" target="_blank" className="fill-white hover:fill-accent duration-150">
+              <Github width={20} height={20} />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/vinicius-simon-gouveia-hilton" target="_blank" className="fill-white hover:fill-accent duration-150">
+              <LinkedIn width={20} height={20} />
             </a>
           </li>
         </ul>
@@ -80,13 +92,13 @@ function App() {
             <span className="text-neutral-600">ou</span>
             <ul className="flex gap-4">
               <li>
-                <a href="https://github.com/vnxcius" target="_blank">
-                  <img src="/icons/github.svg" alt="Github" className="size-5 invert" />
+                <a href="https://github.com/vnxcius" target="_blank" className="fill-white hover:fill-accent duration-150">
+                  <Github width={20} height={20} />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/vinicius-simon-gouveia-hilton" target="_blank">
-                  <img src="/icons/linkedin.svg" alt="Linkedin" className="size-5 invert" />
+                <a href="https://www.linkedin.com/in/vinicius-simon-gouveia-hilton" target="_blank" className="fill-white hover:fill-accent duration-150">
+                  <LinkedIn width={20} height={20} />
                 </a>
               </li>
             </ul>
@@ -200,7 +212,7 @@ function App() {
       <footer className="w-full my-10 mt-20 flex justify-center">
         <a href="https://github.com/vnxcius/vinisimondev" target="_blank" className="flex items-center gap-5 text-neutral-600 text-center px-5 hover:underline hover:text-accent">
           <span>&copy; 2024 Developed with ❤ by Vinícius S. G. Hilton</span>
-          <img src="/icons/github.svg" alt="" className="size-4 invert" />
+          <Github width={16} height={16} fill="white" />
         </a>
       </footer>
     </>
