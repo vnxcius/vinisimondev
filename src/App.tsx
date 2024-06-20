@@ -26,7 +26,7 @@ function App() {
   }, [lastScroll])
   return (
     <>
-      <nav className={"p-5 sticky w-full bg-neutral-900/80 backdrop-blur left-0 top-0 transition-all duration-500 z-50 " + (show ? "visible -translate-y-0" : "invisible  -translate-y-16")}>
+      <nav className={"p-5 fixed w-full bg-neutral-900/80 backdrop-blur left-0 top-0 transition-all duration-500 z-50 " + (show ? "visible -translate-y-0 " : "invisible -translate-y-16")}>
         <ul className="flex justify-center md:justify-normal items-center gap-10 text-neutral-50 max-w-xs md:max-w-3xl lg:max-w-5xl mx-auto">
           <li>
             <a href="#sobre" className="hover:underline underline-offset-2">
@@ -56,59 +56,64 @@ function App() {
         </ul>
       </nav>
 
-      <div className="bg-accent rounded-full absolute -z-10 brightness-50 w-52 h-52 md:w-[500px] md:h-[500px] top-0 right-0 md:-right-52 md:-top-36 blur-[100px]"></div>
+      <div className="bg-accent rounded-full absolute top-28 left-1/3 -z-10 opacity-10 w-64 h-52 md:w-[500px] md:h-[300px] blur-3xl"></div>
 
       <section id="sobre"
-        className="mx-auto flex gap-20 justify-between items-end text-neutral-300 mt-20 mb-44 bg-transparent z-20
+        className="text-neutral-300 py-32 relative">
+          <div className="bg-[url('/img/grid.svg')] bg-repeat grid-mask w-full h-full absolute top-0 -z-10"></div>
+        <div className="
+        mx-auto flex gap-20 justify-between items-end
         max-w-xs md:max-w-3xl lg:max-w-5xl
         flex-col-reverse md:flex-row">
-        <div className="max-w-lg">
-          <h1 className="text-lg text-neutral-300 mb-8 font-mono">
-            <span className="text-accent">#</span> Sobre
-          </h1>
-          <p className="text-accent font-mono">Oi, meu nome é</p>
-          <div className="my-5">
-            <h1 className="text-2xl font-extrabold tracking-wide">Vinícius Simon</h1>
-            <h2 className="tracking-wider italic">Fullstack Developer Jr</h2>
-          </div>
-
-          <p className="my-10">
-            Desde minha infância fui apaixonado por tecnologia, então
-            decidi juntar o útil ao agradável e hoje sou um desenvolvedor
-            fullstack. Não possuo experiência formal, como CLT, mas sou
-            freelancer com alguns projetos que estou trabalhando.
-            Tenho ânsia para aprender dia a pós dia e melhorar cada aspecto
-            que um verdadeiro dev fullstack pode oferecer.
-          </p>
-          <div className="flex items-center gap-5">
-            <div>
-              <a href="mailto:contato@vncius.dev" target="_blank" title="contato@vncius.dev"
-                className="flex items-center gap-2 w-fit px-6 py-1.5 bg-accent text-neutral-925 font-medium rounded hover:brightness-75
-                focus:outline-none focus:ring-2 ring-purple-300">
-                <img src="/icons/gmail.svg" alt="" className="size-5" />
-                <span className="font-medium">Contato</span>
-              </a>
+          <div className="max-w-lg clear-start">
+            <h1 className="text-lg text-neutral-300 mb-8 font-mono">
+              <span className="text-accent">#</span> Sobre
+            </h1>
+            <p className="text-accent font-mono">Oi, meu nome é</p>
+            <div className="my-5">
+              <h1 className="text-2xl font-extrabold tracking-wide">Vinícius Simon</h1>
+              <h2 className="tracking-wider italic">Fullstack Developer Jr</h2>
             </div>
-            <span className="text-neutral-600">ou</span>
-            <ul className="flex gap-4">
-              <li>
-                <a href="https://github.com/vnxcius" target="_blank" className="fill-white hover:fill-accent duration-150">
-                  <Github width={20} height={20} />
+
+            <p className="my-10">
+              Desde minha infância fui apaixonado por tecnologia, então
+              decidi juntar o útil ao agradável e hoje sou um desenvolvedor
+              fullstack. Não possuo experiência formal, como CLT, mas sou
+              freelancer com alguns projetos que estou trabalhando.
+              Tenho ânsia para aprender dia a pós dia e melhorar cada aspecto
+              que um verdadeiro dev fullstack pode oferecer.
+            </p>
+            <div className="flex items-center gap-5">
+              <div>
+                <a href="mailto:contato@vncius.dev" target="_blank" title="contato@vncius.dev"
+                  className="flex items-center gap-2 w-fit px-6 py-1.5 bg-accent text-neutral-925 font-medium rounded hover:brightness-75
+                focus:outline-none focus:ring-2 ring-purple-300">
+                  <img src="/icons/gmail.svg" alt="" className="size-5" />
+                  <span className="font-medium">Contato</span>
                 </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/vinicius-simon-gouveia-hilton" target="_blank" className="fill-white hover:fill-accent duration-150">
-                  <LinkedIn width={20} height={20} />
-                </a>
-              </li>
-            </ul>
+              </div>
+              <span className="text-neutral-600">ou</span>
+              <ul className="flex gap-4">
+                <li>
+                  <a href="https://github.com/vnxcius" target="_blank" className="fill-white hover:fill-accent duration-150">
+                    <Github width={20} height={20} />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vinicius-simon-gouveia-hilton" target="_blank" className="fill-white hover:fill-accent duration-150">
+                    <LinkedIn width={20} height={20} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p className="text-neutral-500 text-sm m-1">contato@vncius.dev</p>
           </div>
-          <p className="text-neutral-500 text-sm m-1">contato@vncius.dev</p>
+
+          <div>
+            <img src="/img/handsome.webp" alt="" className="rounded-xl md:min-w-96 md:w-96 md:min-h-96 md:h-96" />
+          </div>
         </div>
 
-        <div>
-          <img src="/img/handsome.webp" alt="" className="rounded-xl md:min-w-96 md:w-96 md:min-h-96 md:h-96" />
-        </div>
       </section>
 
       <section className="w-full py-8 relative bg-neutral-900 z-20">
